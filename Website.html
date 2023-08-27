@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: blue;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px
+        }
+
+        nav ul li:hover {
+            font-size: 30px;
+            color: red
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+        }
+
+        .first div {
+            width: 30%
+        }
+
+        .leftsec1 {
+            font-size: 3rem;
+        }
+
+        .rightsec1 img {
+            width: 80%;
+
+        }
+
+        #element {
+            color: red;
+        }
+
+        .past {
+            max-width: 80vw;
+            margin: auto;
+            height:360px;
+            
+        }
+
+        .past h1 {
+            font-size: 2rem;
+        }
+
+        .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .vertical {
+            height: 63px;
+            width: 2px;
+            background-color: white;
+            margin: 3px 118px
+        }
+
+        .vertical .title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 16px;
+            display: flex;
+
+        }
+
+        footer {
+            background-color: white;
+            color: red;
+            height: 200px;
+
+        }
+
+        footer ul {
+            list-style: none;
+            margin:100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Dev's Portfolio
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsec1">
+                Hi, My name is Dev
+                and I am a
+                <span id="element"></span>
+            </div>
+            <div class="rightsec1">
+                <img src="photo.jpg">
+            </div>
+        </section>
+        <section class="past">
+            <h1>Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <span class="title">C/C++</span>
+                </div>
+                <div class="vertical">
+                    <span class="title">JAVA</span>
+                </div>
+                <div class="vertical">
+                    <span class="title">SQL</span>
+                </div>
+                <div class="vertical">
+                    <span class="title">PYTHON</span>
+                </div>
+                <div class="vertical">
+                    <span class="title">FRONT END DEVELOPER</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer style="background-color:white;
+                                    color: red;
+                                    display: flex;
+                                    ">
+        <div class="flex">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Contact Me</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Stock Market Enthusiast', 'Professional Gamer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
